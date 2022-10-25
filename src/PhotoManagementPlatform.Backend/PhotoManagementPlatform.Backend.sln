@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{6033E603-B619-43C9-A3B6-E6DFEA2E3862}"
+	ProjectSection(SolutionItems) = preProject
+		SolutionItems\doc.txt = SolutionItems\doc.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7F153081-C7D4-42D6-86E5-421B16A5B0EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Application", "2. Application", "{67E43259-2E44-4AA4-868C-12B51DF1EF67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Domain", "1. Domain", "{62D6FEF5-AB9D-4FAD-80A2-208B39768DFE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Infrastructure", "3. Infrastructure", "{A412B259-3E7C-4DCA-89B3-C631E063667E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Host", "4. Host", "{2A0C93DC-79F7-49E8-AF60-767907032735}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Common", "0. Common", "{F99AC32B-D08C-4D28-A193-B09D2F427FEA}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{67E43259-2E44-4AA4-868C-12B51DF1EF67} = {7F153081-C7D4-42D6-86E5-421B16A5B0EB}
+		{62D6FEF5-AB9D-4FAD-80A2-208B39768DFE} = {7F153081-C7D4-42D6-86E5-421B16A5B0EB}
+		{A412B259-3E7C-4DCA-89B3-C631E063667E} = {7F153081-C7D4-42D6-86E5-421B16A5B0EB}
+		{2A0C93DC-79F7-49E8-AF60-767907032735} = {7F153081-C7D4-42D6-86E5-421B16A5B0EB}
+		{F99AC32B-D08C-4D28-A193-B09D2F427FEA} = {7F153081-C7D4-42D6-86E5-421B16A5B0EB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79078B73-246A-463A-8CB1-5A383015A628}
+	EndGlobalSection
+EndGlobal
