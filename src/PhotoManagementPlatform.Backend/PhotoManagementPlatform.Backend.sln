@@ -22,6 +22,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Common", "0. Common", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Mediator", "Common.Mediator\Common.Mediator.csproj", "{C82F8ADF-61C3-4EC7-97AB-AC3AC90E0568}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoManagementPlatform.IoC", "PhotoManagementPlatform.IoC\PhotoManagementPlatform.IoC.csproj", "{A61337F1-1A3C-4D1F-A03E-634114C4DB31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoManagementPlatform.Domain", "PhotoManagementPlatform.Domain\PhotoManagementPlatform.Domain.csproj", "{088CD344-F0C4-4273-B9E3-C93FE1671B12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoManagementPlatform.Application", "PhotoManagementPlatform.Application\PhotoManagementPlatform.Application.csproj", "{8C12CA90-6BF4-43E5-9565-CEE0A90074B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoManagementPlatform.API", "PhotoManagementPlatform.API\PhotoManagementPlatform.API.csproj", "{0EE26C7F-432E-4E50-9EF8-73D74691861C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +40,22 @@ Global
 		{C82F8ADF-61C3-4EC7-97AB-AC3AC90E0568}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C82F8ADF-61C3-4EC7-97AB-AC3AC90E0568}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C82F8ADF-61C3-4EC7-97AB-AC3AC90E0568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A61337F1-1A3C-4D1F-A03E-634114C4DB31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A61337F1-1A3C-4D1F-A03E-634114C4DB31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A61337F1-1A3C-4D1F-A03E-634114C4DB31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A61337F1-1A3C-4D1F-A03E-634114C4DB31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088CD344-F0C4-4273-B9E3-C93FE1671B12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088CD344-F0C4-4273-B9E3-C93FE1671B12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088CD344-F0C4-4273-B9E3-C93FE1671B12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088CD344-F0C4-4273-B9E3-C93FE1671B12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C12CA90-6BF4-43E5-9565-CEE0A90074B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C12CA90-6BF4-43E5-9565-CEE0A90074B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C12CA90-6BF4-43E5-9565-CEE0A90074B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C12CA90-6BF4-43E5-9565-CEE0A90074B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EE26C7F-432E-4E50-9EF8-73D74691861C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE26C7F-432E-4E50-9EF8-73D74691861C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE26C7F-432E-4E50-9EF8-73D74691861C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE26C7F-432E-4E50-9EF8-73D74691861C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +67,10 @@ Global
 		{2A0C93DC-79F7-49E8-AF60-767907032735} = {7F153081-C7D4-42D6-86E5-421B16A5B0EB}
 		{F99AC32B-D08C-4D28-A193-B09D2F427FEA} = {7F153081-C7D4-42D6-86E5-421B16A5B0EB}
 		{C82F8ADF-61C3-4EC7-97AB-AC3AC90E0568} = {F99AC32B-D08C-4D28-A193-B09D2F427FEA}
+		{A61337F1-1A3C-4D1F-A03E-634114C4DB31} = {67E43259-2E44-4AA4-868C-12B51DF1EF67}
+		{088CD344-F0C4-4273-B9E3-C93FE1671B12} = {62D6FEF5-AB9D-4FAD-80A2-208B39768DFE}
+		{8C12CA90-6BF4-43E5-9565-CEE0A90074B6} = {67E43259-2E44-4AA4-868C-12B51DF1EF67}
+		{0EE26C7F-432E-4E50-9EF8-73D74691861C} = {2A0C93DC-79F7-49E8-AF60-767907032735}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {79078B73-246A-463A-8CB1-5A383015A628}

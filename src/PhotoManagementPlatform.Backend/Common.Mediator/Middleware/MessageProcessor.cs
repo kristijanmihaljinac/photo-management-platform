@@ -1,4 +1,5 @@
 ﻿using Common.Mediator.Core;
+using Common.Mediator.Events;
 using Common.Mediator.UseCases;
 
 namespace Common.Mediator.Middleware
@@ -50,8 +51,7 @@ namespace Common.Mediator.Middleware
 
             //typeof(IQuery<TResponse>).IsAssignableFrom(type)
             //    || typeof(ICommand<TResponse>).IsAssignableFrom(type)
-            if (
-                || typeof(IUseCase<TResponse>).IsAssignableFrom(type))
+            if (typeof(IUseCase<TResponse>).IsAssignableFrom(type))
             {
                 return await _messageHandlers.Single().HandleAsync(messageObject, mediationContext, cancellationToken);
             }

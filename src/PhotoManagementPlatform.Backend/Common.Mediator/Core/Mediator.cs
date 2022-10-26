@@ -3,7 +3,7 @@ using System.Reflection;
 
 namespace Common.Mediator.Core
 {
-    internal class Mediator : IMediator
+    public class Mediator : IMediator
     {
         private readonly IServiceFactory _serviceFactory;
 
