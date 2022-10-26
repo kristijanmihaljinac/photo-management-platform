@@ -20,7 +20,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Host", "4. Host", "{2A0C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Common", "0. Common", "{F99AC32B-D08C-4D28-A193-B09D2F427FEA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Mediator", "Common.Mediator\Common.Mediator.csproj", "{C82F8ADF-61C3-4EC7-97AB-AC3AC90E0568}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C82F8ADF-61C3-4EC7-97AB-AC3AC90E0568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C82F8ADF-61C3-4EC7-97AB-AC3AC90E0568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C82F8ADF-61C3-4EC7-97AB-AC3AC90E0568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C82F8ADF-61C3-4EC7-97AB-AC3AC90E0568}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
@@ -30,6 +42,7 @@ Global
 		{A412B259-3E7C-4DCA-89B3-C631E063667E} = {7F153081-C7D4-42D6-86E5-421B16A5B0EB}
 		{2A0C93DC-79F7-49E8-AF60-767907032735} = {7F153081-C7D4-42D6-86E5-421B16A5B0EB}
 		{F99AC32B-D08C-4D28-A193-B09D2F427FEA} = {7F153081-C7D4-42D6-86E5-421B16A5B0EB}
+		{C82F8ADF-61C3-4EC7-97AB-AC3AC90E0568} = {F99AC32B-D08C-4D28-A193-B09D2F427FEA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {79078B73-246A-463A-8CB1-5A383015A628}
