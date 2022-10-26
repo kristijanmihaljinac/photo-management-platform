@@ -10,6 +10,7 @@ namespace PhotoManagementPlatform.Application.UseCases.Customer
     public class GetCustomerByIdUseCaseHandler : IRequestHandler<GetCustomerByIdUseCase, Customer>
     {
 
+
         public GetCustomerByIdUseCaseHandler()
         {
         }

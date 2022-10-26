@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="DDD\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DDD\" />
+  </ItemGroup>
 </Project>
