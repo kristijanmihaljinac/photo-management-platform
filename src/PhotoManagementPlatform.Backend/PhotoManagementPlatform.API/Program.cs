@@ -1,5 +1,4 @@
-using Autofac.Extensions.DependencyInjection;
-using Autofac;
+using MediatR;
 using Microsoft.OpenApi.Models;
 using PhotoManagementPlatform.IoC;
 
@@ -25,8 +24,10 @@ builder.Services.AddSwaggerGen(c =>
     c.EnableAnnotations();
 });
 
-builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
-builder.Host.ConfigureContainer<ContainerBuilder>(conBuilder => DependencyContainer.RegisterModules(conBuilder, builder.Configuration));
+
+DependencyContainer.RegisterModules(builder.Services, builder.Configuration);
+
+//builder.Services.AddMediatR(typeof(Program));
 
 var app = builder.Build();
 

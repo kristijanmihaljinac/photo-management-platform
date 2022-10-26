@@ -1,21 +1,14 @@
-﻿using Autofac;
-using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using PhotoManagementPlatform.IoC.Modules;
 
 namespace PhotoManagementPlatform.IoC
 {
     public static class DependencyContainer
     {
-        public static void RegisterModules(ContainerBuilder builder, IConfiguration configuration)
+        public static void RegisterModules(IServiceCollection services, IConfiguration configuration)
         {
-            string photoManagementDbConnectionString = configuration.GetConnectionString("PhotoManagementDb");
-
-            builder.RegisterModule(new Modules.MediatorModule());
-
+            MediatorModule.Load(services);
         }
     }
 }
