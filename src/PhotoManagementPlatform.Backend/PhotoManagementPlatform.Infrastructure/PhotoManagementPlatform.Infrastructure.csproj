@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PhotoManagementPlatform.Application\PhotoManagementPlatform.Application.csproj" />
+    <ProjectReference Include="..\PhotoManagementPlatform.Persistence\PhotoManagementPlatform.Persistence.csproj" />
+  </ItemGroup>
 </Project>

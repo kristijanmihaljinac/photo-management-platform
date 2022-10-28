@@ -22,4 +22,3 @@ namespace Common.DDD
             _domainEvents.Add(domainEvent);
     }
 }
-
