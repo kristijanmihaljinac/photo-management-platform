@@ -8,7 +8,9 @@ namespace PhotoManagementPlatform.IoC
     {
         public static void RegisterModules(IServiceCollection services, IConfiguration configuration)
         {
-            MediatorModule.Load(services);
+            MediatorModule.Load(services, configuration);
+            ApplicationModule.Load(services, configuration);
+            InfrastructureModule.Load(services, configuration);
         }
     }
 }

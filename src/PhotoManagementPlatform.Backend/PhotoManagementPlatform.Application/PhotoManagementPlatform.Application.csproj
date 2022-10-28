@@ -7,11 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="11.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\PhotoManagementPlatform.Domain\PhotoManagementPlatform.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="MediatR" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.0.0" />
+  </ItemGroup>
 </Project>

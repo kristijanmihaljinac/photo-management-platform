@@ -8,8 +8,12 @@
 
   <ItemGroup>
     <None Remove="DDD\" />
+    <None Remove="MediatR" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DDD\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.0.0" />
   </ItemGroup>
 </Project>
