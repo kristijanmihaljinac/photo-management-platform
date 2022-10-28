@@ -10,4 +10,15 @@
     <ProjectReference Include="..\PhotoManagementPlatform.Application\PhotoManagementPlatform.Application.csproj" />
     <ProjectReference Include="..\PhotoManagementPlatform.Persistence\PhotoManagementPlatform.Persistence.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Quartz" />
+    <None Remove="Services\" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Quartz" Version="3.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
 </Project>
