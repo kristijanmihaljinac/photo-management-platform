@@ -1,0 +1,8 @@
+ADD NEW MIGRATION
+dotnet ef migrations add [migration_name] --context ApplicationDbContext -o Migrations --project  PhotoManagementPlatform.Persistence --startup-project PhotoManagementPlatform.API
+
+START DATABASE UPDATE
+dotnet ef database update --context ApplicationDbContext --project  PhotoManagementPlatform.Persistence --startup-project PhotoManagementPlatform.API
+
+GET SCRIPT
+

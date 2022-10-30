@@ -1,11 +1,9 @@
-﻿using System;
-using System.Text.Json;
-using Common.DDD;
+﻿using Common.DDD;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
-using PhotoManagementPlatform.Persistence.Outbox;
 using Newtonsoft.Json;
 using PhotoManagementPlatform.Domain.Constants;
+using PhotoManagementPlatform.Persistence.Outbox;
 
 namespace PhotoManagementPlatform.Persistence.Interceptors;
 
@@ -51,7 +49,7 @@ public sealed class ConvertDomainEventsToOutboxMessagesInterceptor
                 EntityType = domainEvent.EntityType.ToString()
             })
             .ToList();
-         
+
         dbContext.Set<OutboxMessage>().AddRange(outboxMessages);
 
         return base.SavingChangesAsync(eventData, result, cancellationToken);
