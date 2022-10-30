@@ -5,4 +5,5 @@ START DATABASE UPDATE
 dotnet ef database update --context ApplicationDbContext --project  PhotoManagementPlatform.Persistence --startup-project PhotoManagementPlatform.API
 
 GET SCRIPT
+dotnet ef migrations script --idempotent --context ApplicationDbContext --project  PhotoManagementPlatform.Persistence --startup-project PhotoManagementPlatform.API -o my-file-name.sql
 
