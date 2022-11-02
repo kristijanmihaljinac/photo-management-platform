@@ -16,7 +16,6 @@
   <ItemGroup>
     <Folder Include="DDD\" />
     <Folder Include="Application\" />
-    <Folder Include="Shared\" />
     <Folder Include="Repository\" />
   </ItemGroup>
   <ItemGroup>
