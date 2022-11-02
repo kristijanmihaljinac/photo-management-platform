@@ -8,3 +8,8 @@ public interface IUseCaseHandler<TUseCase, TResponse>
     where TUseCase : IUseCase<TResponse>
 {
 }
+
+public interface IUseCaseHandler<TUseCase> : IRequestHandler<TUseCase, Result>
+    where TUseCase : IUseCase
+{
+}

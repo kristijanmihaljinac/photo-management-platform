@@ -21,5 +21,25 @@ internal sealed class PackageConfiguration : IEntityTypeConfiguration<Domain.Pac
             .IsRequired(true)
             .HasColumnType("nvarchar")
             .HasMaxLength(255);
+
+        builder.Property(x => x.CreatedOnUtc)
+            .HasDefaultValueSql("GETUTCDATE()")
+            .IsRequired(true);
+
+        builder.Property(x => x.CreatedBy)
+            .IsRequired(false)
+            .HasMaxLength(255);
+
+        builder.Property(x => x.ModifiedOnUtc)
+            .IsRequired(false);
+
+        builder.Property(x => x.ModifiedBy)
+            .IsRequired(false)
+            .HasMaxLength(255);
+
+        builder.Property(x => x.Active)
+            .IsRequired(true)
+            .HasDefaultValue(true);
+
     }
 }

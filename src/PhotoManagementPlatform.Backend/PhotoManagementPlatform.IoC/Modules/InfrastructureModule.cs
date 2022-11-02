@@ -3,7 +3,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PhotoManagementPlatform.Persistence;
 using PhotoManagementPlatform.Persistence.Interceptors;
-using System.Reflection;
 
 namespace PhotoManagementPlatform.IoC.Modules;
 
@@ -12,9 +11,6 @@ internal static class InfrastructureModule
     internal static void Load(IServiceCollection services, IConfiguration configuration)
     {
         string connectionString = configuration.GetConnectionString("Database");
-        var appAssembly = Assembly.Load("PhotoManagementPlatform.Application");
-        //var infraAssembly = Assembly.Load("PhotoManagementApp.Infrastructure");
-        //var domainAssembly = Assembly.Load("PhotoManagementApp.Domain");
 
         services
          .Scan(
@@ -26,17 +22,24 @@ internal static class InfrastructureModule
              .AsImplementedInterfaces()
              .WithScopedLifetime());
 
+        services.AddSingleton<ConvertDomainEventsToOutboxMessagesInterceptor>();
+
+        services.AddSingleton<UpdateAuditableEntitiesInterceptor>();
+
         services.AddDbContext<ApplicationDbContext>(
                 (sp, optionsBuilder) =>
                 {
                     var outboxInterceptor = sp.GetService<ConvertDomainEventsToOutboxMessagesInterceptor>()!;
-
+                    var auditableInterceptor = sp.GetService<UpdateAuditableEntitiesInterceptor>()!;
 
                     optionsBuilder.UseSqlServer(connectionString)
                         .AddInterceptors(
-                            outboxInterceptor
+                            outboxInterceptor,
+                            auditableInterceptor
                             );
                 });
+
+        services.AddMemoryCache();
 
     }
 }

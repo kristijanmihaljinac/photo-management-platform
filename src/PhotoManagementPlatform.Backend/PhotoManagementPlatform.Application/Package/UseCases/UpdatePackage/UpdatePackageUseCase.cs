@@ -1,5 +1,6 @@
-﻿namespace PhotoManagementPlatform.Application.Package.UseCases.UpdatePackage;
+﻿using PhotoManagementPlatform.Application.Abstractions.Messaging;
 
-public record UpdatePackageUseCase
-{
-}
+namespace PhotoManagementPlatform.Application.Package.UseCases.UpdatePackage;
+
+public record UpdatePackageUseCase(Guid Id, string Code, string Name)
+    : IUseCase;
