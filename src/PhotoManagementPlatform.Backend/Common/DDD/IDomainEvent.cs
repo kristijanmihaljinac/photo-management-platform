@@ -1,5 +1,4 @@
-﻿using System;
-using Common.Application;
+﻿using Common.Application;
 using MediatR;
 
 namespace Common.DDD

@@ -1,5 +1,4 @@
-﻿using System;
-using PhotoManagementPlatform.Domain.Repositories;
+﻿using PhotoManagementPlatform.Domain.Repositories;
 
 namespace PhotoManagementPlatform.Persistence;
 

@@ -1,6 +1,4 @@
-﻿using System;
-using PhotoManagementPlatform.Domain.Constants;
-using PhotoManagementPlatform.Domain.Enum;
+﻿using PhotoManagementPlatform.Domain.Constants;
 namespace PhotoManagementPlatform.Persistence.Outbox;
 
 public sealed class OutboxMessage
@@ -22,6 +20,6 @@ public sealed class OutboxMessage
     public DateTime? ProcessedOnUtc { get; set; }
 
     public string? Note { get; set; }
-    
+
 }
 

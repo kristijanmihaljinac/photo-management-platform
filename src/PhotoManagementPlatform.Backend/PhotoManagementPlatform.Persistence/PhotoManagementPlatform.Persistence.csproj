@@ -27,7 +27,6 @@
     <ProjectReference Include="..\Common\Common.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Configurations\" />
     <Folder Include="Migrations\" />
     <Folder Include="Outbox\" />
     <Folder Include="Constants\" />
