@@ -1,4 +1,4 @@
-package hr.kristijanmihaljinac.photomanagementplatform.ui.theme
+package hr.kristijanmihaljinac.photomanagementplatform.presentation.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

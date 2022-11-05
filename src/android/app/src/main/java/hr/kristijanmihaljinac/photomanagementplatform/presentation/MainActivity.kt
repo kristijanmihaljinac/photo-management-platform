@@ -1,4 +1,4 @@
-package hr.kristijanmihaljinac.photomanagementplatform
+package hr.kristijanmihaljinac.photomanagementplatform.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import hr.kristijanmihaljinac.photomanagementplatform.ui.theme.PhotoManagementPlatformTheme
+import hr.kristijanmihaljinac.photomanagementplatform.presentation.ui.theme.PhotoManagementPlatformTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
