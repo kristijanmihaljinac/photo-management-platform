@@ -13,10 +13,20 @@
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.4.0" />
+    <PackageReference Include="Ardalis.ApiEndpoints" Version="4.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\PhotoManagementPlatform.IoC\PhotoManagementPlatform.IoC.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Ardalis.ApiEndpoints" />
+    <None Remove="Endpoints\" />
+    <None Remove="Endpoints\Packages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Endpoints\" />
+    <Folder Include="Endpoints\Packages\" />
+  </ItemGroup>
 </Project>

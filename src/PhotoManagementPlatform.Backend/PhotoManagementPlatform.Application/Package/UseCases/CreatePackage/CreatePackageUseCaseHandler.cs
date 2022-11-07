@@ -1,5 +1,7 @@
-﻿using PhotoManagementPlatform.Application.Abstractions.Messaging;
+﻿using Common.Shared;
+using PhotoManagementPlatform.Application.Abstractions.Messaging;
 using PhotoManagementPlatform.Application.Package.Repositories;
+using PhotoManagementPlatform.Domain.Repositories;
 
 namespace PhotoManagementPlatform.Application.Package.UseCases.CreatePackage;
 
