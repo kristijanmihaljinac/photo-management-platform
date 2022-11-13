@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">PhotoManagementPlatform</string>
+    <string name="cinema">Cinema</string>
+    <string name="made">Made by students</string>
+    <string name="movies">Movies</string>
+    <string name="map">Map</string>
+    <string name="about">About</string>
+    <string name="authentication">Authentication</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="person">Person</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="unable_to_login">Unable to login</string>
+    <string name="unable_to_register">Unable to register</string>
+    <string name="singapore">Singapore</string>
+    <string name="close">Close</string>
 </resources>
