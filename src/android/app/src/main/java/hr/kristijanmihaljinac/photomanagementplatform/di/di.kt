@@ -1,2 +1,0 @@
-package hr.kristijanmihaljinac.photomanagementplatform.di
-

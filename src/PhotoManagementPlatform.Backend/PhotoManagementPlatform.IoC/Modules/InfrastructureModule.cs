@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Common.DDD;
+using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PhotoManagementPlatform.Persistence;
@@ -36,7 +38,7 @@ internal static class InfrastructureModule
                         .AddInterceptors(
                             outboxInterceptor,
                             auditableInterceptor
-                            );
+                    );
                 });
 
         services.AddMemoryCache();
