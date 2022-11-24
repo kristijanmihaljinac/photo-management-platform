@@ -2,6 +2,8 @@
 using PhotoManagementPlatform.Persistence;
 using Microsoft.EntityFrameworkCore;
 using PhotoManagementPlatform.Application.Package.UseCases.OverviewPackage;
+using Common.Specifications;
+using PhotoManagementPlatform.Infrastructure.Specifications;
 
 namespace PhotoManagementPlatform.Infrastructure.Repositories.Package;
 
@@ -18,5 +20,18 @@ public class PackageReadOnlyRepository : IPackageReadOnlyRepository
 
     public async Task<List<OverviewPackageDto>> OverviewAsync(CancellationToken cancellationToken) =>
         await _dbContext.Set<Domain.Package.Package>().Select(x => new OverviewPackageDto(x.Id, x.Code, x.Name)).ToListAsync(cancellationToken);
-    
+
+    public async Task<List<OverviewPackageDto>> OverviewBySpecification(Specification<Domain.Package.Package> specification, CancellationToken cancellationToken)
+    {
+        var result = await SpecificationEvaluator.GetQuery(
+           _dbContext.Set<Domain.Package.Package>(),
+                specification).Select(package => 
+                   new OverviewPackageDto(
+                       package.Id, 
+                       package.Code, 
+                       package.Name))
+           .ToListAsync();
+
+        return result;
+    }
 }

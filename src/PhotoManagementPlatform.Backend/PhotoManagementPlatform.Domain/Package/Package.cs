@@ -22,6 +22,7 @@ public class Package : AggregateRoot, IAuditableEntity
         Id = id;
         Code = code;
         Name = name;
+        Active = true;
     }
 
     public static Package Create(
