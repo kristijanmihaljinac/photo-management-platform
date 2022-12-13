@@ -1,5 +1,7 @@
-﻿namespace PhotoManagementPlatform.Application.Package.UseCases.OverviewPackage;
+﻿using PhotoManagementPlatform.Application.Abstractions.Messaging;
 
-public record OverviewPackageUseCase
+namespace PhotoManagementPlatform.Application.Package.UseCases.OverviewPackage;
+
+public record OverviewPackageUseCase : IUseCase
 {
 }

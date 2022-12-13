@@ -9,5 +9,5 @@ public interface IPackageReadOnlyRepository
 
     Task<List<OverviewPackageDto>> OverviewAsync(CancellationToken cancellationToken);
 
-    Task<List<OverviewPackageDto>> OverviewBySpecification(Specification<Domain.Package.Package> specification, CancellationToken cancellationToken);
+    Task<List<OverviewPackageDto>> OverviewBySpecification(OverviewSpecification<Domain.Package.Package> specification, CancellationToken cancellationToken);
 }

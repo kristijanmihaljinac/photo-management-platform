@@ -28,11 +28,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotoManagementPlatform.App
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotoManagementPlatform.API", "PhotoManagementPlatform.API\PhotoManagementPlatform.API.csproj", "{0EE26C7F-432E-4E50-9EF8-73D74691861C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{4D00055E-80D5-4E42-A0CA-EC5970450D8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{4D00055E-80D5-4E42-A0CA-EC5970450D8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoManagementPlatform.Infrastructure", "PhotoManagementPlatform.Infrastructure\PhotoManagementPlatform.Infrastructure.csproj", "{19AE8130-82BF-4DF5-9190-6E3FE4FA94EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotoManagementPlatform.Infrastructure", "PhotoManagementPlatform.Infrastructure\PhotoManagementPlatform.Infrastructure.csproj", "{19AE8130-82BF-4DF5-9190-6E3FE4FA94EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoManagementPlatform.Persistence", "PhotoManagementPlatform.Persistence\PhotoManagementPlatform.Persistence.csproj", "{685A9E49-6B33-406E-8798-7E9F586D31E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotoManagementPlatform.Persistence", "PhotoManagementPlatform.Persistence\PhotoManagementPlatform.Persistence.csproj", "{685A9E49-6B33-406E-8798-7E9F586D31E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -21,7 +21,7 @@ public class PackageReadOnlyRepository : IPackageReadOnlyRepository
     public async Task<List<OverviewPackageDto>> OverviewAsync(CancellationToken cancellationToken) =>
         await _dbContext.Set<Domain.Package.Package>().Select(x => new OverviewPackageDto(x.Id, x.Code, x.Name)).ToListAsync(cancellationToken);
 
-    public async Task<List<OverviewPackageDto>> OverviewBySpecification(Specification<Domain.Package.Package> specification, CancellationToken cancellationToken)
+    public async Task<List<OverviewPackageDto>> OverviewBySpecification(OverviewSpecification<Domain.Package.Package> specification, CancellationToken cancellationToken)
     {
         var result = await SpecificationEvaluator.GetQuery(
            _dbContext.Set<Domain.Package.Package>(),
