@@ -17,6 +17,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Package\Entities\" />
+    <Folder Include="Package\DTOs\" />
     <Folder Include="Package\ValueObjects\" />
     <Folder Include="Repositories\" />
     <Folder Include="Constants\" />

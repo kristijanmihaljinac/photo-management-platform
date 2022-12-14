@@ -14,6 +14,10 @@ public class PackageReadOnlyRepository : IPackageReadOnlyRepository
     public PackageReadOnlyRepository(ApplicationDbContext dbContext) =>
         _dbContext = dbContext;
 
+    public async Task<bool> ExistsWithCodeAsync(string code, CancellationToken cancellationToken) =>
+       await _dbContext.Set<Domain.Package.Package>().AnyAsync(x => x.Code == code, cancellationToken);
+    
+
     public async Task<Domain.Package.Package?> GetByIdAsync(Guid id, CancellationToken cancellationToken) =>
         await _dbContext.Set<Domain.Package.Package>().FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
 
