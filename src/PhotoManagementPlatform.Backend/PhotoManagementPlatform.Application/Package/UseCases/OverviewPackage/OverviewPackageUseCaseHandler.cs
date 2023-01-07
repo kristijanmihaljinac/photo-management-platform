@@ -8,7 +8,7 @@ using PhotoManagementPlatform.Domain.Repositories;
 
 namespace PhotoManagementPlatform.Application.Package.UseCases.OverviewPackage;
 
-public sealed class OverviewPackageUseCaseHandler : IUseCaseHandler<OverviewPackageUseCase>
+public sealed class OverviewPackageUseCaseHandler : IUseCaseHandler<OverviewPackageUseCase, List<OverviewPackageDto>>
 {
 
     private readonly IPackageReadOnlyRepository _packageReadOnlyRepository;
@@ -20,16 +20,16 @@ public sealed class OverviewPackageUseCaseHandler : IUseCaseHandler<OverviewPack
         _packageReadOnlyRepository= packageReadOnlyRepository;
         _unitOfWork= unitOfWork;
     }
-    public async Task<Result> Handle(OverviewPackageUseCase request, CancellationToken cancellationToken)
+    public async Task<Result<List<OverviewPackageDto>>> Handle(OverviewPackageUseCase request, CancellationToken cancellationToken)
     {
-        var specification = new OverviewSpecificationBuilder<Domain.Package.Package>()
+        /*var specification = new OverviewSpecificationBuilder<Domain.Package.Package>()
                             .WithFilter("Name", "Package 1")
                             .WithSort("DateCreated", SortDirection.Descending)
                             .Build();
+        */
 
+        var packages = await _packageReadOnlyRepository.OverviewAsync(cancellationToken);
 
-        var nesto = _packageReadOnlyRepository.OverviewBySpecification(specification, cancellationToken);
-
-        return Result.Success();
+        return Result.Success(packages);
     }
 }

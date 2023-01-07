@@ -2,6 +2,6 @@
 
 namespace PhotoManagementPlatform.Application.Package.UseCases.OverviewPackage;
 
-public record OverviewPackageUseCase : IUseCase
+public record OverviewPackageUseCase : IUseCase<List<OverviewPackageDto>>
 {
 }
